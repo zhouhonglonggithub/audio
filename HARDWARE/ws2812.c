@@ -95,7 +95,6 @@ void WS2812_show(void)
         }
     }
     HAL_TIM_PWM_Start_DMA(&htim3, TIM_CHANNEL_4, (uint32_t *)&frame, 3 + 24 * PIXEL_MAX + 1);
-		HAL_Delay(1);
 }
 
 /*****************************************************************************

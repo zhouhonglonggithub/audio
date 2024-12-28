@@ -269,7 +269,7 @@ void VS1003_RamTest(void)
 	while(MP3_DREQ == 0);          /* 等待DREQ为高 */
 	MP3_DCS(0);	       			     /* xDCS = 1，选择vs1003的数据接口 */
 	
-	HAL_SPI_Transmit(&hspi2, writeBuff, 8, 1000);
+//	HAL_SPI_Transmit(&hspi2, writeBuff, 8, 1000);
 	HAL_Delay(50);  
 	MP3_DCS(1);
 	value = VS1003_ReadReg(SPI_HDAT0); /* 如果得到的值为0x807F，则表明完好 */
@@ -286,7 +286,7 @@ void VS1003_PlayMusic()
 	{
 		 while(!MP3_DREQ);  //VS1003的DREQ为高才能写入数据
 		//HAL_SPI_Transmit_DMA(&hspi2, &music[i], 1);
-		HAL_SPI_Transmit(&hspi2, &music[i], 1, 0xffff);
+//		HAL_SPI_Transmit(&hspi2, &music[i], 1, 0xffff);
 	}
 }
 
