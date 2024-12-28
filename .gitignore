@@ -1,0 +1,7 @@
+MDK-ARM/stm32f103_usbhost_demo/*.o
+MDK-ARM/stm32f103_usbhost_demo/*.d
+MDK-ARM/stm32f103_usbhost_demo/*.crf
+MDK-ARM/JLinkLog.txt
+MDK-ARM/stm32f103_usbhost_demo/stm32f103_usbhost_demo.build_log.htm
+MDK-ARM/stm32f103_usbhost_demo/stm32f103_usbhost_demo.htm
+ MDK-ARM/stm32f103_usbhost_demo*.*.lenovo
